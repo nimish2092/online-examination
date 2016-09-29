@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="assets/stylesheets/survey.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src = "assets/scripts/survey.js"></script>
+</head>
+<body>
+	<section class="main">
+		<header>
+			<h1>Survey</h1>
+		</header>
+
+		<section class="body">
+			<p>How did you like the center?</p>
+			<label>
+				Comments:
+				<textarea name="comments" rows="10" cols="70"></textarea>
+			</label>
+
+			<p>Select Test Location:</p>
+			<label>
+				City:
+				<input list="cities">
+				<datalist id="cities">
+					<option value="San Jose">
+					<option value="San Francisco">
+					<option value="Mountain View">
+					<option value="Palo Alto">
+					<option value="Milpitas">
+					<option value="Sunnyvale">
+					<option value="Cupertino">
+					<option value="Oakland">
+				</datalist>
+			</label>
+
+			<label>
+				Room Number#:
+				<input list="rooms">
+				<datalist id="rooms">
+					<option value="210">
+					<option value="110">
+					<option value="410">
+					<option value="310">
+					<option value="510">
+					<option value="610">
+					<option value="710">
+					<option value="810">
+					<option value="910">
+				</datalist>
+			</label>
+				
+			
+		</section>
+
+		<section class="controls">
+			<button name="submit" id="submit" onclick="window.location.href='score.html'">Submit &amp; Next Question</button>
+			<button name="clear" id="clear">Cancel &amp; Clear Selection</button>
+		</section>
+	</section>
+
+</body>
+</html>

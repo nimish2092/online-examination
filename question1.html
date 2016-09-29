@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 1</title>
+	<link rel="stylesheet" href="assets/stylesheets/question1.css">
+	<script type="text/javascript" src = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">	
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src = "assets/scripts/q1.js"></script>
+	
+	
+</head>
+<body>
+	<section class="main">
+		
+		<header>
+			<h1>Question 1</h1>
+		</header>
+		
+		<section class="body">
+			<p>Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line.</p>
+
+			
+			<!-- option 1 -->
+			<input type="radio" name="solution" value="1">
+				<math><mi>y</mi>
+					<mo>=</mo>
+					<mi>m</mi>	
+					<mi>x</mi>
+					<mo>+</mo>
+					<mi>b</mi>
+					
+					<mspace linebreak='newline' />
+				</math>
+		
+		<!-- (x-h)^2 + (y-k)^2 = r^2      option2 -->
+		<input type="radio" name="solution" value="2" id="opt2">
+		<math>
+			<msup>
+				<mfenced>
+					<mrow>
+						<mi>x</mi><mo>-</mo><mi>h</mi>
+					</mrow>
+				</mfenced>
+				<mn>2</mn>
+			</msup>
+			<mo>+</mo>
+			<msup>
+				<mfenced>
+					<mrow>
+						<mi>y</mi><mo>-</mo><mi>k</mi>
+					</mrow>
+				</mfenced>
+				<mn>2</mn>
+			</msup>
+			<mo>=</mo>
+			<msup>
+				<mi>r</mi>
+				<mn>2</mn>
+			</msup>
+
+			<mspace linebreak='newline' />
+		</math><br>
+	
+		<!-- y-y1 = m(x-x1) -->
+		<input type="radio" name="solution" value="3">
+		<math>
+			<mi>y</mi>
+			<mo>-</mo>
+			<msub>
+				<mi>y</mi>
+				<mn>1</mn>
+			</msub>
+			<mo>=</mo>
+			<mi>m</mi>
+			<mfenced>
+					<mrow>
+						<mi>x</mi>
+						<mo>-</mo>
+						<msub>
+							<mi>x</mi>
+							<mn>1</mn>
+						</msub>
+					</mrow>
+			</mfenced>
+
+			<mspace linebreak='newline' />
+		</math>
+		
+		<!-- y-y2 = y2-y1/x2-x1 (x-x2) -->
+		<input type="radio" name="solution" id="ans" value="4">
+		<math>
+			<mi>y</mi>
+			<mo>-</mo>
+			<msub>
+				<mi>y</mi>
+				<mn>2</mn>
+			</msub>
+			<mo>=</mo>
+			<mfrac>
+				<mrow>
+					<msub>
+						<mi>y</mi>
+						<mn>2</mn>
+					</msub>
+					<mo>-</mo>
+					<msub>
+						<mi>y</mi>
+						<mn>1</mn>
+					</msub>
+				</mrow>
+				<mrow>
+					<msub>
+						<mi>x</mi>
+						<mn>2</mn>
+					</msub>
+					<mo>-</mo>
+					<msub>
+						<mi>x</mi>
+						<mn>1</mn>
+					</msub>
+				</mrow>
+			</mfrac>
+			<mfenced>
+					<mrow>
+						<mi>x</mi>
+						<mo>-</mo>
+						<msub>
+							<mi>x</mi>
+							<mn>2</mn>
+						</msub>
+					</mrow>
+			</mfenced>
+
+			<mspace linebreak='newline' />
+		</math><br>
+		</section>
+		
+		<aside>
+			<canvas id="a" height="375" width="500"></canvas>
+		</aside>
+
+		<section class="controls">
+			<button name="submit" id="submit" onclick="window.location.href='question2.html'">Submit &amp; Next Question</button>
+			<button name="clear" id="clear">Cancel &amp; Clear Selection</button>
+		</section>
+	
+	</section>
+	<script type="text/javascript" src = "assets/scripts/main.js"></script>
+
+</body>
+</html>

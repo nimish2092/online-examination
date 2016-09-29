@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scores</title>
+	<link rel="stylesheet" href="assets/stylesheets/score.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src = "assets/scripts/score.js"></script>
+</head>
+<body>
+<section class="main">
+	
+	<header>
+		<h1>Score Card</h1>
+	</header>
+
+	<section class="body">
+		<details>
+			<summary id="quant">Quantitative Section</summary>
+			<p>Number of questions answered:</p>
+			<mark id="qanswered"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></mark><br>
+			<p>Correct answers:</p>
+			<mark id="qcorrect"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></mark><br>
+			<p>Score:</p>
+			<mark id="qscore"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></mark><br>
+		</details>
+
+		<details>
+			<summary id="reading">Reading Section</summary>
+			<p>Number of questions answered:</p>
+			<mark id="ranswered"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></mark><br>
+			<p>Correct answers:</p>
+			<mark id="rcorrect">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+			<p>Score:</p>
+			<mark id="rscore">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+		</details>
+
+		<details>
+			<summary id="av">Audio/Video Section</summary>
+			<p>Number of questions answered:</p>
+			<mark id="vanswered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+			<p>Correct answers:</p>
+			<mark id="vcorrect">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+			<p>Score:</p>
+			<mark id="vscore">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+		</details>
+
+		<details>
+			<summary id="total">Total Summary</summary>
+			<p>Number of questions answered:</p>
+			<mark id="answered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+			<p>Correct answers:</p>
+			<mark id="correct">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+			<p>Score:</p>
+			<mark id="score">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</mark><br>
+		</details>
+	</section>
+
+	<section class="controls">
+			<button name="finish" onclick="window.location.href='login.html'">Finish</button>
+	</section>
+</section>
+</body>
+</html>
